@@ -35,6 +35,9 @@ namespace TodoApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime?>("DueDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("OwnId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
